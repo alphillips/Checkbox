@@ -3,31 +3,25 @@ import {Checkbox as Chckbox} from 'material-ui'
 
 class Checkbox extends React.Component {
 
-  constructor(props) {
-    super(props)
-
-    this.state = {
-      isInputChecked: props.isInputChecked || ''
-      checked: props.checked || ''
-    }
-  }
-
   render() {
 
     const labelStyle = {
       fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif'
     }
 
+    const style = {
+      marginTop: '2em'
+    }
+
     return (
       <Chckbox
         label={this.props.label || ''}
-        checked={this.state.checked || false}
+        checked={this.props.checked}
         disabled={this.props.disabled || false}
-        inputStyle={this.props.inputStyle}
-        labelPosition={this.props.labelPosition}
-        labelStyle={this.labelStyle}
+        labelPosition={this.props.labelPosition || 'right'}
+        labelStyle={labelStyle}
         onCheck={this.props.onCheck}
-        style={this.props.style}
+        style={style}
       />
     )
   }
