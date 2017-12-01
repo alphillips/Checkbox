@@ -16,6 +16,7 @@ class Checkbox extends React.Component {
     return (
       <Chckbox
         label={this.props.label || ''}
+        checked={this.props.checked}
         disabled={this.props.disabled || false}
         labelPosition={this.props.labelPosition || 'right'}
         labelStyle={labelStyle}

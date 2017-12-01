@@ -5,16 +5,22 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import Checkbox from '../../src'
 
 let Demo = React.createClass({
-  onChange() {
-    console.log("in OnChange")
-    return (value) => {
-      console.log(value)
+  getInitialState () {
+    return {
+      checked: false
+    };
+  },
+  onCheck() {
+    return () => {
+      this.setState((prevState, props) => ({
+      checked: !this.state.checked
+    }))
     }
   },
   render() {
     return(
     <MuiThemeProvider>
-      <Checkbox label="I am a checkbox" onCheck={this.onChange()} />
+      <Checkbox label="I am a checkbox" checked={this.state.checked} onCheck={this.onCheck()} />
     </MuiThemeProvider>
     )
   }
