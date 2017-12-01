@@ -15,7 +15,7 @@ let Demo = React.createClass({
   render() {
     return(
       <MuiThemeProvider>
-        <Checkbox label="I am a checkbox" onChange={this.onChange("checkbox")}/>
+        <Checkbox label="I am a checkbox" onCheck={this.onChange("checkbox")}/>
       </MuiThemeProvider>
     )
   }
