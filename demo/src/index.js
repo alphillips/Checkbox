@@ -20,7 +20,7 @@ let Demo = React.createClass({
   render() {
     return(
     <MuiThemeProvider>
-      <Checkbox label="I am a checkbox" checked={this.state.checked} onCheck={this.onCheck()} />
+      <Checkbox label="I am a checkbox" checked={this.state.checked} onCheck={this.onCheck()} helpText="hello help text" />
     </MuiThemeProvider>
     )
   }

@@ -1,0 +1,12 @@
+.input-with-help {
+  display:table;
+}
+
+.input-with-help div:first-of-type{
+  display: table-cell;
+  width: auto!important;
+}
+
+.buttonControl-group-container{
+  display: table-cell;
+}

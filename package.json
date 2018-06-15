@@ -22,7 +22,8 @@
     "react": "15.x"
   },
   "dependencies": {
-    "material-ui": "0.19.0"
+    "material-ui": "0.19.0",
+    "@react-ag-components/help": "latest"
   },
   "devDependencies": {
     "nwb": "0.15.x",
