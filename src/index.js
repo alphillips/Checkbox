@@ -33,7 +33,7 @@ class Checkbox extends React.Component {
     }
 
     return (
-      <div className={className}>
+      <div className={"checkbox-container " + className}>
         <Chckbox
           label={this.props.label || ''}
           checked={this.props.checked}
