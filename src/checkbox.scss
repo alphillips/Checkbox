@@ -1,15 +1,19 @@
-.input-with-help {
-  div:first-of-type {
-    width: auto!important;
-    margin-top: 0!important;
-    float: left!important;
+.checkbox-container {
+
+  &.input-with-help {
+    div:first-of-type {
+      width: auto!important;
+      margin-top: 0!important;
+      float: left!important;
+    }
+    label {
+       width: auto!important;
+       margin-left: 20px;
+     }
+     .buttonControl-group-container {
+      display: inline;
+      margin-top: 3px;
+    }
   }
-  label {
-     width: auto!important;
-     margin-left: 20px;
-   }
-   .buttonControl-group-container {
-    display: inline;
-    margin-top: 3px;
-  }
+
 }
